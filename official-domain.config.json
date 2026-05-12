@@ -1,0 +1,23 @@
+{
+  "primaryDomain": "https://herlife.app",
+  "secureLaunchDomain": "https://secure.herlife.app",
+  "appDomain": "https://app.herlife.ai",
+  "customSchemes": [
+    "herlife://aura",
+    "herlife://safety",
+    "herlife://account",
+    "web+herlife:"
+  ],
+  "universalLinkRoutes": [
+    "/open/*",
+    "/aura/*",
+    "/safety/*",
+    "/delete-account"
+  ],
+  "security": {
+    "requiresHttps": true,
+    "requiresShortLivedLaunchToken": true,
+    "allowsAnonymousAuraProcessing": true,
+    "storesAuraChatsEncryptedOnly": true
+  }
+}

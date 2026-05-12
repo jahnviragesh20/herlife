@@ -1,0 +1,29 @@
+{
+  "name": "HerLife",
+  "short_name": "HerLife",
+  "description": "A luxury AI-powered women’s emotional support and safety ecosystem.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+herlife",
+      "url": "/index.html?launch=%s"
+    }
+  ],
+  "background_color": "#020102",
+  "theme_color": "#1A0310",
+  "categories": ["health", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "assets/herlife-silk-reference.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

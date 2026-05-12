@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0D0D0D" />
+    <meta name="application-name" content="HerLife" />
+    <meta name="apple-mobile-web-app-title" content="HerLife" />
+    <meta name="herlife-official-origin" content="https://herlife.app" />
+    <title>HerLife</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  
+  
+  <body>
+    <div class="aurora" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="orb orb-three"></span>
+    </div>
+
+    <main class="phone-shell" aria-label="HerLife mobile application">
+      <section class="app" id="app">
+        <header class="topbar">
+          <button class="icon-button" data-view="home" aria-label="Go home">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.9 12 4l8 6.9v8.4a.7.7 0 0 1-.7.7h-4.6v-5.6H9.3V20H4.7a.7.7 0 0 1-.7-.7v-8.4Z"/></svg>
+          </button>
+          <div>
+            <p class="eyebrow">Private support ecosystem</p>
+            <h1>HerLife</h1>
+          </div>
+          <button class="icon-button" data-view="settings" aria-label="Open settings">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13.4c.1-.5.1-.9.1-1.4s0-.9-.1-1.4l2-1.5-2-3.5-2.4 1a7.2 7.2 0 0 0-2.4-1.4L14.3 2h-4l-.4 3.2c-.9.3-1.7.8-2.4 1.4l-2.4-1-2 3.5 2 1.5c-.1.5-.1.9-.1 1.4s0 .9.1 1.4l-2 1.5 2 3.5 2.4-1c.7.6 1.5 1.1 2.4 1.4l.4 3.2h4l.4-3.2c.9-.3 1.7-.8 2.4-1.4l2.4 1 2-3.5-2.1-1.5ZM12 15.4a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8Z"/></svg>
+          </button>
+        </header>
+
+        <div class="view-stack">
+          <section class="view is-active" data-screen="home">
+            <article class="hero-card glass">
+              <p class="date-line" id="dateLine">Thursday morning</p>
+              <h2 id="greeting">Good morning, Jahnvi.</h2>
+              <p class="hero-copy">A calm place for safety, confidence, private reflection, and soft daily rituals.</p>
+              <div class="hero-actions">
+                <button class="primary-pill" data-view="chat">Talk to Aura</button>
+                <button class="round-action" data-open-eye aria-label="Open Her Eye">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5.4c5.2 0 8.5 4.6 9.4 6.1a1 1 0 0 1 0 1c-.9 1.5-4.2 6.1-9.4 6.1s-8.5-4.6-9.4-6.1a1 1 0 0 1 0-1c.9-1.5 4.2-6.1 9.4-6.1Zm0 9.8a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z"/></svg>
+                </button>
+              </div>
+            </article>
+
+            <section class="quick-grid">
+              <button class="feature-tile glass" data-view="chat">
+                <span class="tile-icon"><svg viewBox="0 0 24 24"><path d="M4 5.8C4 4.8 4.8 4 5.8 4h12.4c1 0 1.8.8 1.8 1.8v8.4c0 1-.8 1.8-1.8 1.8h-7l-4.1 3.3V16H5.8c-1 0-1.8-.8-1.8-1.8V5.8Z"/></svg></span>
+                <span>Aura AI</span>
+                <small>Private emotional support</small>
+              </button>
+              <button class="feature-tile glass" data-open-eye>
+                <span class="tile-icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6.2c0 4.7 3.4 7.8 8 9.8 4.6-2 8-5.1 8-9.8V6l-8-3Zm0 4.9a4.1 4.1 0 1 1 0 8.2 4.1 4.1 0 0 1 0-8.2Z"/></svg></span>
+                <span>Her Eye</span>
+                <small>Discreet safety control</small>
+              </button>
+              <button class="feature-tile glass" data-view="nearby">
+                <span class="tile-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg></span>
+                <span>Nearby</span>
+                <small>Women around you</small>
+              </button>
+              <button class="feature-tile glass" data-view="mood">
+                <span class="tile-icon"><svg viewBox="0 0 24 24"><path d="M12 3c4.9 0 9 3.5 9 7.9 0 5.8-7.4 9.9-8.9 10.6a.5.5 0 0 1-.4 0C10.2 20.8 3 16.7 3 10.9 3 6.5 7.1 3 12 3Z"/></svg></span>
+                <span>Mood</span>
+                <small>Check in gently</small>
+              </button>
+            </section>
+
+            <section class="section-head">
+              <h3>Today's Comfort</h3>
+              <button class="text-button" data-view="feed">View all</button>
+            </section>
+            <div class="comfort-rail" id="comfortRail"></div>
+
+            <article class="glass insight-card">
+              <div>
+                <p class="eyebrow">Confidence ritual</p>
+                <h3>You can be soft and still have boundaries.</h3>
+              </div>
+              <button class="mini-control" id="breatheBtn">Start</button>
+            </article>
+
+            <article class="glass insight-card region-card">
+              <div>
+                <p class="eyebrow">Regional protection</p>
+                <h3 id="regionTitle">Detecting your safety region...</h3>
+                <small id="regionSubtitle">Emergency numbers and resources adapt to your location.</small>
+              </div>
+              <button class="mini-control" id="refreshRegion">Detect</button>
+            </article>
+          </section>
+
+          <section class="view" data-screen="chat">
+            <article class="assistant-intro glass">
+              <div>
+                <p class="eyebrow">Aura AI</p>
+                <h2>Warm support, with privacy first.</h2>
+              </div>
+              <p id="auraPrivacyCopy">Aura remembers only this active conversation unless you choose encrypted history.</p>
+              <div class="aura-controls">
+                <span class="privacy-pill" id="auraModePill">Privacy choice needed</span>
+                <button class="mini-control" id="privateAuraBtn" type="button">Private Aura Session</button>
+              </div>
+            </article>
+            <div class="chat-window glass" id="chatWindow" aria-live="polite"></div>
+            <form class="composer glass" id="chatForm">
+              <input id="chatInput" autocomplete="off" placeholder="Tell Aura what you need..." />
+              <button type="submit" aria-label="Send message">
+                <svg viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-7-8-3Z"/></svg>
+              </button>
+            </form>
+          </section>
+
+          <section class="view" data-screen="nearby">
+            <article class="map-card glass">
+              <div class="map-field" aria-hidden="true">
+                <span class="pulse user-dot"></span>
+                <span class="near-dot dot-a"></span>
+                <span class="near-dot dot-b"></span>
+                <span class="near-dot dot-c"></span>
+                <span class="route-line"></span>
+              </div>
+              <div class="map-overlay">
+                <p class="eyebrow">Opt-in proximity</p>
+                <h2>4 HerLife women nearby</h2>
+                <p>Approximate, temporary, and private by default.</p>
+              </div>
+            </article>
+            <div class="support-list">
+              <button class="support-row glass">
+                <span>Send soft support ping</span>
+                <small>Expires in 12 minutes</small>
+              </button>
+              <button class="support-row glass">
+                <span>Open safe route companion</span>
+                <small>Gentle guidance home</small>
+              </button>
+              <button class="support-row glass">
+                <span>Request visible check-in</span>
+                <small>No exact location exposed</small>
+              </button>
+            </div>
+            <section class="section-head">
+              <h3>Emergency Near You</h3>
+              <button class="text-button" id="refreshInfrastructure">Refresh</button>
+            </section>
+            <div class="infrastructure-list" id="infrastructureList"></div>
+          </section>
+
+          <section class="view" data-screen="feed">
+            <div class="feed-stack" id="feedStack"></div>
+          </section>
+
+          <section class="view" data-screen="mood">
+            <article class="glass mood-card">
+              <p class="eyebrow">Emotional check-in</p>
+              <h2>How is your inner weather?</h2>
+              <div class="mood-options" id="moodOptions"></div>
+              <textarea id="journalText" placeholder="A private line for yourself..."></textarea>
+              <button class="primary-pill" id="saveMood">Save check-in</button>
+            </article>
+            <article class="glass affirmation">
+              <p class="eyebrow">For later</p>
+              <h3 id="affirmationText">You do not have to earn care by being easy to understand.</h3>
+            </article>
+          </section>
+
+          <section class="view" data-screen="settings">
+            <article class="glass settings-panel">
+              <p class="eyebrow">Account readiness</p>
+              <h2>Private access</h2>
+              <div class="auth-grid">
+                <button class="auth-button" id="appleSignIn">Apple</button>
+                <button class="auth-button" id="googleSignIn">Google</button>
+                <button class="auth-button" id="biometricUnlock">Biometric</button>
+              </div>
+            </article>
+            <article class="glass settings-panel">
+              <p class="eyebrow">Appearance</p>
+              <h2>Choose your atmosphere</h2>
+              <div class="theme-grid" id="themeGrid"></div>
+            </article>
+            <article class="glass settings-panel">
+              <p class="eyebrow">Privacy & safety</p>
+              <div class="setting-row"><span>AI long-term memory</span><button class="switch" data-toggle="memory" aria-pressed="false"></button></div>
+              <div class="setting-row"><span>Private Aura default</span><button class="switch" data-toggle="privateAura" aria-pressed="false"></button></div>
+              <div class="setting-row"><span>Screenshot privacy curtain</span><button class="switch is-on" data-toggle="privacyCurtain" aria-pressed="true"></button></div>
+              <div class="setting-row"><span>Nearby visibility</span><button class="switch is-on" data-toggle="nearby" aria-pressed="true"></button></div>
+              <div class="setting-row"><span>Quiet emergency mode</span><button class="switch is-on" data-toggle="quiet" aria-pressed="true"></button></div>
+              <div class="setting-row"><span>Shake trigger</span><button class="switch is-on" data-toggle="shake" aria-pressed="true"></button></div>
+              <div class="setting-row"><span>Voice trigger</span><button class="switch is-on" data-toggle="voice" aria-pressed="true"></button></div>
+              <div class="setting-row input-row"><span>Fake caller</span><input id="callerInput" value="Maya" maxlength="18" /></div>
+              <div class="setting-row input-row"><span>SafeCall mode</span><select id="safeCallMode"><option>Best Friend</option><option>Sister</option><option>Calm Companion</option><option>Protective Friend</option></select></div>
+              <div class="setting-row"><span>Trusted contacts</span><strong>3 saved</strong></div>
+              <div class="legal-actions">
+                <button class="text-button" data-legal="privacy">Privacy</button>
+                <button class="text-button" data-legal="terms">Terms</button>
+                <button class="text-button" id="deleteAccount">Delete account</button>
+              </div>
+            </article>
+            <article class="glass settings-panel">
+              <p class="eyebrow">Official access</p>
+              <h2>HerLife web ecosystem</h2>
+              <div class="setting-row"><span>Primary domain</span><strong>herlife.app</strong></div>
+              <div class="setting-row"><span>Secure app domain</span><strong>secure.herlife.app</strong></div>
+              <div class="setting-row"><span>Deep link scheme</span><strong>herlife://</strong></div>
+              <button class="primary-pill domain-button" id="officialAccessBtn">Open secure portal</button>
+            </article>
+          </section>
+        </div>
+
+        <nav class="tabbar glass" aria-label="Primary navigation">
+          <button class="tab is-active" data-view="home"><svg viewBox="0 0 24 24"><path d="M4 10.9 12 4l8 6.9V20h-5.3v-5.6H9.3V20H4v-9.1Z"/></svg><span>Home</span></button>
+          <button class="tab" data-view="chat"><svg viewBox="0 0 24 24"><path d="M4 5.8C4 4.8 4.8 4 5.8 4h12.4c1 0 1.8.8 1.8 1.8v8.4c0 1-.8 1.8-1.8 1.8h-7l-4.1 3.3V16H5.8c-1 0-1.8-.8-1.8-1.8V5.8Z"/></svg><span>Aura</span></button>
+          <button class="eye-tab" data-open-eye aria-label="Open Her Eye"><svg viewBox="0 0 24 24"><path d="M12 5.4c5.2 0 8.5 4.6 9.4 6.1a1 1 0 0 1 0 1c-.9 1.5-4.2 6.1-9.4 6.1s-8.5-4.6-9.4-6.1a1 1 0 0 1 0-1c.9-1.5 4.2-6.1 9.4-6.1Zm0 9.8a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z"/></svg></button>
+          <button class="tab" data-view="feed"><svg viewBox="0 0 24 24"><path d="M6 3.5h12A2.5 2.5 0 0 1 20.5 6v12a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18V6A2.5 2.5 0 0 1 6 3.5Zm2.5 4v9l7-4.5-7-4.5Z"/></svg><span>Comfort</span></button>
+          <button class="tab" data-view="settings"><svg viewBox="0 0 24 24"><path d="M19.4 13.4c.1-.5.1-.9.1-1.4s0-.9-.1-1.4l2-1.5-2-3.5-2.4 1a7.2 7.2 0 0 0-2.4-1.4L14.3 2h-4l-.4 3.2c-.9.3-1.7.8-2.4 1.4l-2.4-1-2 3.5 2 1.5c-.1.5-.1.9-.1 1.4s0 .9.1 1.4l-2 1.5 2 3.5 2.4-1c.7.6 1.5 1.1 2.4 1.4l.4 3.2h4l.4-3.2c.9-.3 1.7-.8 2.4-1.4l2.4 1 2-3.5-2.1-1.5Z"/></svg><span>Settings</span></button>
+        </nav>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="eyeModal" aria-hidden="true">
+      <section class="eye-panel glass" role="dialog" aria-modal="true" aria-labelledby="eyeTitle">
+        <button class="close-button" data-close-eye aria-label="Close Her Eye">x</button>
+        <p class="eyebrow">Her Eye</p>
+        <h2 id="eyeTitle">Choose the level that matches the moment.</h2>
+        <div class="safety-meter">
+          <input type="range" min="1" max="10" value="3" id="safetyLevel" />
+          <div class="meter-labels"><span>Calm</span><span>Share</span><span>Emergency</span></div>
+        </div>
+        <article class="level-card" id="levelCard"></article>
+        <div class="emergency-status" id="emergencyStatus"></div>
+        <div class="eye-actions">
+          <button class="action-chip" id="fakeCallBtn">SafeCall AI</button>
+          <button class="action-chip" id="shareRouteBtn">Share route</button>
+          <button class="action-chip loud" id="alertContactsBtn">Alert contacts</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="call-screen" id="callScreen" aria-hidden="true">
+      <div class="call-glow"></div>
+      <p id="callStyleLabel">SafeCall AI</p>
+      <h2 id="callerName">Maya</h2>
+      <span id="callCaption">incoming call...</span>
+      <div class="call-actions">
+        <button class="decline" id="declineCall">Decline</button>
+        <button class="accept" id="acceptCall">Answer</button>
+      </div>
+      <div class="call-transcript glass" id="callTranscript" aria-live="polite"></div>
+      <button class="mini-control call-style-toggle" id="callStyleToggle">iPhone UI</button>
+    </div>
+
+    <div class="legal-modal glass" id="legalModal" aria-hidden="true">
+      <button class="close-button" id="closeLegal" aria-label="Close">x</button>
+      <p class="eyebrow" id="legalEyebrow">Privacy</p>
+      <h2 id="legalTitle">HerLife Privacy</h2>
+      <p id="legalBody"></p>
+    </div>
+
+    <div class="privacy-consent-modal glass" id="chatMemoryModal" aria-hidden="true">
+      <p class="eyebrow">Aura privacy</p>
+      <h2>Would you like to save this conversation history?</h2>
+      <p>Your conversation stays private and is not permanently stored unless you choose encrypted history.</p>
+      <div class="consent-actions">
+        <button class="primary-pill" id="saveChatHistory">Save Chat History</button>
+        <button class="mini-control" id="temporaryChatOnly">Temporary Session Only</button>
+      </div>
+    </div>
+
+    <div class="privacy-curtain" id="privacyCurtain">
+      <div class="glass">
+        <p class="eyebrow">Private Aura Session</p>
+        <h2>HerLife is protecting this screen.</h2>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
